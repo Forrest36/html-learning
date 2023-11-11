@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_伪列选择器_动态伪列</title>
+    <style>
+        /* 选中的是没有访问过的a元素 */
+        a:link {
+            color: orange;
+        }
+        /* 选中的是访问过的a元素 */
+        a:visited {
+            color: gray;
+        }
+        /* 选中的是鼠标悬浮状态的a元素 */
+        a:hover {
+            color: skyblue;
+        }
+        /* 选中的是激活状态的a元素 */
+        a:active {
+            color: green;
+        }
+        /* 选中的是鼠标悬浮的span元素 */
+        span:hover {
+            color: skyblue;
+        }
+        /* 选中的是激活状态的a元素 */
+        span:active {
+            color: green;
+        }
+        /*  */
+        input:focus,select:focus {
+            color: orange;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://baidu.com">去百度</a>
+    <a href="https://jd.com">去狗东</a>
+    <span>尚硅谷</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <select>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+    </select>
+</body>
+</html>

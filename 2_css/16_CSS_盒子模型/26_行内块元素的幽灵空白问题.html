@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>26_行内块元素的幽灵空白问题</title>
+    <style>
+        div {
+            width: 600px;
+            background-color: royalblue;
+            font-size: 0px;
+        }
+        img {
+            height: 200px;
+            /* vertical-align: bottom */
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../imges/小姐姐.gif" alt="小姐姐">xg
+    </div>
+</body>
+</html>

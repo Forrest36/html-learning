@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_浮动后的影响</title>
+    <style>
+        .outer {
+            width: 500px;
+            /* 第一种解决方法 */
+            /* height: 122px; */
+            background-color: grey;
+            border: 1px solid black;
+            /* 第二种解决方法 */
+            /* float: left; */
+            /*第三种解决方法 */
+            /* overflow: hidden; */
+
+
+
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box1,.box2,.box3,.box4 {
+            float: left;
+        } 
+        /* .box4 {
+            display: inline-block;
+            height: 250px;
+        } */
+            /*第四种解决方法 */
+        /* .mofa {
+            clear: both;
+        } */
+            /*第五种解决方法 */
+        .outer::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <!-- <div class="box box0">0</div> -->
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <!-- <div class="mofa"></div> -->
+    </div>
+    <div style="background-color: orange;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, in? Tenetur blanditiis temporibus tempora et ducimus doloribus quis distinctio voluptatibus veritatis repudiandae cupiditate provident eligendi nihil adipisci quia repellendus quisquam ut, sapiente error alias commodi. Quae numquam in deleniti ipsa nesciunt enim accusantium molestias dolorem consequuntur. Molestias provident reiciendis aperiam explicabo distinctio, esse dignissimos praesentium quis. Odit ab optio commodi quidem dolorem saepe, sequi quis numquam, officia, modi magni deleniti? Nam nostrum ipsum mollitia aliquam ex dicta accusamus maiores asperiores doloribus amet. Architecto, repellat placeat nihil cumque, eligendi voluptates amet, quis quasi dicta beatae odit earum? Non eos quo soluta!</div>
+</body>
+</html>

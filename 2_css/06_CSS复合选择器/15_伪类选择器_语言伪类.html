@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>15_伪类选择器_语言伪类</title>
+    <style>
+        div:lang(en) {
+            color: red;
+        }
+
+        div:lang(zh-CN) {
+            color: green;
+        }
+
+        :lang(zh-CN) {
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div>通辽汗国</div>
+    <div lang="en">tongliao-khanate</div>
+    <p>小国</p>
+    <span>狠人</span>
+</body>
+</html>

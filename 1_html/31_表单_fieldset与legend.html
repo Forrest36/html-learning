@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_fieldset与legend</title>
+</head>
+<body>
+    <form action="https://search.jd.com/seach">
+        <!-- 主要信息 -->
+        <fieldset>
+            <legend>主要信息</legend>
+            <label for="zhanghu">账户：</label>
+            <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+            <label>
+                密码：
+                <input id="mima" type="password" name="pwd" maxlength="10">
+            </label>
+            <br>
+            性别：
+            <input type="radio" name="gender" value="male" id="nan" >
+            <label for="nan">男</label>
+            <label>
+                <input type="radio" name="gender" value="female" checked>
+                女
+            </label>
+        </fieldset>
+        <br>
+        <!-- 附加信息 -->
+        <fieldset>
+            <legend>附加信息</legend>
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="smoking">抽烟
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="drinking">喝酒
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="perming" checked>烫头
+            </label>
+            <br>
+            <label for="qita">其他:</label>
+            <textarea name="other" id="qita" cols="22.5" rows="10"></textarea><br>
+            籍贯:
+            <select name="place">
+                <option value="ODS">敖德萨</option>
+                <option value="LSTF">罗斯托夫</option>
+                <option value="DBS">顿巴斯</option>
+                <option value="YKJ">叶卡捷琳诺达尔</option>
+                <option value="GJS">高加索</option>
+            </select>
+        </fieldset>
+        <input type="hidden" name="tag" value="123">
+        <br>
+        <input type="submit" value="确认">
+        <input type="reset" value="点我重置">
+        <input type="button" value="检测账户是否有被注册">
+    </form>
+</body>
+</html>
